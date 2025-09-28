@@ -4,11 +4,11 @@
   align-items: center;
   padding: 0;
   height: 408px;
-  width: 200px;
+  width: $card-width;
   border-radius: 5px;
   border: 1px solid #f3f3f3;
   box-sizing: border-box;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
 
   &__image {
     background-image: url(../images/imac.jpeg);
@@ -26,8 +26,9 @@
   }
 
   &__title {
-    color: #060b35;
+    color: $darck-color;
     margin-bottom: 4px;
+    transition: color 0.3s ease;
   }
 
   &__title--font {
@@ -43,14 +44,14 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0;
-    color: #616070;
+    color: $small-text-color;
     margin: 4px 0 16px;
   }
 
   &__review {
     font-size: 10px;
     line-height: 14px;
-    color: #060b35;
+    color: $darck-color;
   }
 
   &__price {
@@ -62,14 +63,14 @@
   &__price-label {
     font-size: 12px;
     line-height: 18px;
-    color: #616070;
+    color: $small-text-color;
   }
 
   &__price-value {
-    font-weight: 700;
+    font-weight: $bold-weight;
     font-size: 16px;
     line-height: 18px;
-    color: #060b35;
+    color: $darck-color;
   }
 
   &__btn {
@@ -82,22 +83,25 @@
     width: 166px;
     height: 40px;
     border-radius: 5px;
-    color: #fff;
-    background-color: #00acdc;
+    color: $btn-text-color;
+    background-color: $isActiv-color;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: $bold-weight;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
     box-sizing: border-box;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
 
-    &[data-qa='card-hover']:hover {
-      outline: 1px solid #00acdc;
-      color: #00acdc;
-      background-color: #fff;
-      box-sizing: border-box;
-    }
+  &__btn:hover {
+    outline: 1px solid $isActiv-color;
+    color: $isActiv-color;
+    background-color: $btn-text-color;
+    box-sizing: border-box;
   }
 }
 

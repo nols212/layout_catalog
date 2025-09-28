@@ -42,23 +42,23 @@
     justify-content: center;
     position: relative;
     text-transform: uppercase;
-    color: #060b35;
+    color: $darck-color;
     text-decoration: none;
     line-height: 60px;
     white-space: nowrap;
   }
 
   &__link:hover {
-    color: #00acdc;
+    color: $isActiv-color;
   }
 
   .is-active {
-    color: #00acdc;
+    color: $isActiv-color;
   }
 
   .is-active::after {
     content: '';
-    background-color: #00acdc;
+    background-color: $isActiv-color;
     height: 4px;
     width: 100%;
     border-radius: 8px;

@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4px;
-  margin-bottom: 24px;
+  gap: $stars-gap;
+  margin-bottom: $stars-margin-bottom;
 
   .stars--4 {
     margin: 0;
@@ -13,15 +13,15 @@
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 16px;
-    height: 16px;
+    width: $star-size;
+    height: $star-size;
   }
 
   &__reviews {
     justify-content: center;
     font-weight: 400;
     font-size: 10px;
-    color: #060b35;
+    color: $darck-color;
   }
 
   @for $i from 1 through 4 {
