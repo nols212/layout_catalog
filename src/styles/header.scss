@@ -46,17 +46,18 @@
     text-decoration: none;
     line-height: 60px;
     white-space: nowrap;
+    transition: color $transition-duration ease;
   }
 
   &__link:hover {
     color: $isActiv-color;
   }
 
-  .is-active {
+  .nav__link.is-active {
     color: $isActiv-color;
   }
 
-  .is-active::after {
+  .nav__link.is-active::after {
     content: '';
     background-color: $isActiv-color;
     height: 4px;
@@ -67,7 +68,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: block;
-    transition: opacity 0.2s;
+    transition: opacity $transition-duration;
     opacity: 1;
   }
 }
